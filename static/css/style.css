@@ -11,12 +11,13 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #6702CA 0% 0% no-repeat padding-box;
+  background: #6702ca 0% 0% no-repeat padding-box;
 }
 
 .text {
@@ -86,8 +87,11 @@ button {
 }
 
 @media (max-width: 768px) {
-  .text {
-    margin-bottom: 40px;
+  .text{
+    padding-bottom: 150px;
+  }
+  .s-text{
+       padding-bottom: 80px;
   }
   button,
   input {
@@ -95,7 +99,7 @@ button {
     object-fit: contain;
   }
   .logo {
-    margin-top: 120px;
+    margin-top: 100px;
     left: 120px;
     right: 120px;
     width: 100%;
