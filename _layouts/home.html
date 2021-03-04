@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script type="text/javascript">var submitted=false;</script>
+    <title>UX Campus</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md">
+          <img class="logo" src="/static/img/Logo.svg" alt="" />
+          <h1 class="text">The Campus is being prepared.</h1>
+          <p class="s-text small">
+            We are launching sooner than you think. Share your email with us so
+            we can let you know when do.
+          </p>
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none"
+            onload="if(submitted) {
+              document.getElementById('msg').innerHTML =
+            'Thank you! We have received your submission'};
+               
+            document.getElementById('email').value = '';
+            
+            "
+          ></iframe>
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScudRnZBacbXsJlVEMikcE_bWZk9SPvrgUpK1R016DS7qLMZA/formResponse"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+          >
+            <input
+            id="email"
+              type="email"
+              placeholder="Enter email address here"
+              name="entry.1631956594"
+              required
+            />
+            <p id="msg" style="color: white;"></p>
+          
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-7">
+          <img class="hero-img" src="/static/img/hero-section-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
