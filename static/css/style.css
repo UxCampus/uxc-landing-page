@@ -11,7 +11,7 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 body {
@@ -87,12 +87,10 @@ button {
 }
 
 @media (max-width: 768px) {
-  .text{
+  .text {
     padding-bottom: 150px;
   }
-  .s-text{
-       padding-bottom: 80px;
-  }
+
   button,
   input {
     width: 100%;
@@ -103,6 +101,36 @@ button {
     left: 120px;
     right: 120px;
     width: 100%;
+    height: 95px;
+    opacity: 1;
+  }
+  .hero-img {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .s-text {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .text {
+    padding-top: 10px;
+    font-size: 35px;
+  }
+
+  button,
+  input {
+    width: 100%;
+    object-fit: contain;
+  }
+  .logo {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    
     height: 95px;
     opacity: 1;
   }
