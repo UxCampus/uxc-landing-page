@@ -21,7 +21,7 @@
 title: Ux On Campus
 email: hi@ux-c.org
 description: 
-baseurl: "/uxc-landing-page" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://uxcampus.github.io"
 
 
